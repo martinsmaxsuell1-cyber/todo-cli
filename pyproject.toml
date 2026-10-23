@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todo-cli"
+version = "1.0.0"
+description = "Fast, elegant, SQLite-backed task manager for Termux and Linux"
+authors = [{ name = "Developer" }]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["todo", "task-manager", "cli", "sqlite", "productivity", "termux"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+todo = "todocli.cli:main"
+td = "todocli.cli:main"
